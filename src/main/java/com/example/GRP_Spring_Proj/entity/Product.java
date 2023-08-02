@@ -7,6 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.criteria.CriteriaBuilder;
+import java.time.LocalDate;
 
 @Data
 @Entity
@@ -16,6 +17,7 @@ public class Product {
     private Integer productId;
     private String productName;
     private String productDescription;
+    private LocalDate expiryDate;
 
     @Override
     public String toString() {
